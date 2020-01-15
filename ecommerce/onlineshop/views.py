@@ -5,7 +5,7 @@ from django.http import HttpResponse
 def index(request):
     return render(request,'shop/index.html')
 def about(request):
-    return HttpResponse("This is about Us page")
+    return render(request,'shop/about.html')
 def contact(request):
     return HttpResponse("This is contact Us page")
 def tracker(request):
